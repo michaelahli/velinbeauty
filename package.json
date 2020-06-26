@@ -1,0 +1,16 @@
+{
+  "name": "velinbeauty",
+  "version": "1.0.0",
+  "description": "create your own magic",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Michael Ahli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mongoose": "^5.9.20"
+  }
+}
