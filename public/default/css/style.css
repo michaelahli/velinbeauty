@@ -2,14 +2,22 @@ body {
     font-family: 'Montserrat';
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*header*/
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    z-index: 1;
+    background-color: rgb(243, 144, 197, 0.27);
 }
 
 .header .full {
@@ -88,7 +96,7 @@ a {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: purple;
+    background-color: red;
     left: 0;
     transform: scaleX(0);
     transition: all .5s;
@@ -122,7 +130,7 @@ a {
 }
 
 .overlay {
-    background-color: purple;
+    background-color: #C182B7;
     position: fixed;
     right: 0;
     left: 0;
@@ -175,7 +183,7 @@ a {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: crimson;
+    background-color: red;
     left: 0;
     transform: scaleX(0);
     transition: all .5s;
@@ -194,6 +202,38 @@ a {
 .header .full a:hover::before,
 .header .full a:hover::after {
     transform: scaleX(1);
+}
+
+/*jumbotron*/
+
+.jumbotron {
+    background-image: url(../img/jumbotron.png);
+    height: 150vh;
+    border-style: none;
+    margin-top: -8.5em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-size:contain;*/
+}
+
+.jumbotron .sub-title span {
+    float: right;
+    padding-top: 27em;
+    margin-right: -21em;
+    font-size: 120%;
+    letter-spacing: 8px;
+    font-weight: bold;
+    color: #A14391;
+}
+
+.jumbotron .title span {
+    float: right;
+    padding-top: 3em;
+    margin-right: 0.5em;
+    font-size: 600%;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 5px;
 }
 
 @keyframes slideIn {
@@ -243,10 +283,10 @@ a {
 
     .header .menu-toggle i {
         float: right;
-        font-size: 2.5em;
+        font-size: 2em;
         padding-right: 1em;
         padding-top: 1em;
-        color: black;
+        color: white;
         cursor: pointer;
         /*ganti*/
     }
@@ -275,5 +315,37 @@ a {
         display: flex;
         transform: scale(1);
         opacity: 1;
+    }
+
+    .header .logo img {
+        width: 7em;
+    }
+
+    .header {
+        background-color: transparent;
+    }
+}
+
+@media(max-width:700px) {
+
+    /*Jumbotron*/
+    .jumbotron .sub-title span {
+        float: right;
+        padding-top: 26em;
+        margin-right: -20em;
+        font-size: 50%;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #A14391;
+    }
+
+    .jumbotron .title span {
+        float: right;
+        padding-top: 4em;
+        margin-right: 0.5em;
+        font-size: 200%;
+        font-weight: 900;
+        color: white;
+        letter-spacing: 5px;
     }
 }
