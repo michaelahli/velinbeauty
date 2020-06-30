@@ -359,6 +359,7 @@ a {
     .header .logo img {
         width: 5em;
         padding-top: 0.5em;
+        animation: slideIn .5s forwards;
     }
 
     .jumbotron {
@@ -381,7 +382,7 @@ a {
 
     .jumbotron .title span {
         padding-top: 3em;
-        margin-right: 1em;
+        margin-right: 0.8em;
         font-size: 150%;
         font-weight: 900;
         letter-spacing: 5px;
