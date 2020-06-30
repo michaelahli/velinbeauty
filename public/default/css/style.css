@@ -373,10 +373,10 @@ a {
 
     /*Jumbotron*/
     .jumbotron .sub-title span {
-        padding-top: 20em;
-        margin-right: -20.5em;
+        padding-top: 15em;
+        margin-right: -18em;
         font-size: 30%;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     .jumbotron .title span {
