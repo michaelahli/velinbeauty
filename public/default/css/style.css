@@ -214,26 +214,26 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
     /*background-size:contain;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.jumbotron .sub-title span {
-    float: right;
-    padding-top: 27em;
-    margin-right: -21em;
-    font-size: 120%;
-    letter-spacing: 8px;
-    font-weight: bold;
-    color: #A14391;
+.jumbotron .jumbo-wrapper {
+    padding-top: 20em;
 }
 
 .jumbotron .title span {
-    float: right;
-    padding-top: 3em;
-    margin-right: 0.5em;
     font-size: 600%;
-    font-weight: 900;
     color: white;
     letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.jumbotron .sub-title span {
+    font-size: 120%;
+    letter-spacing: 8px;
+    padding-left: 0.5em;
+    color: purple;
 }
 
 @keyframes slideIn {
@@ -333,20 +333,18 @@ a {
         font-size: 1.5em;
     }
 
-    /*Jumbotron*/
-    .jumbotron .sub-title span {
-        padding-top: 26em;
-        margin-right: -20em;
-        font-size: 50%;
-        letter-spacing: 3px;
+    /*jumbotron*/
+    .jumbotron .jumbo-wrapper {
+        padding-top: 8em;
     }
 
     .jumbotron .title span {
-        padding-top: 4em;
-        margin-right: 0.5em;
         font-size: 200%;
-        font-weight: 900;
-        letter-spacing: 5px;
+    }
+
+    .jumbotron .sub-title span {
+        font-size: 50%;
+        letter-spacing: 3px;
     }
 }
 
@@ -372,19 +370,17 @@ a {
         /*background-size:contain;*/
     }
 
-    /*Jumbotron*/
-    .jumbotron .sub-title span {
-        padding-top: 15em;
-        margin-right: -16.5em;
-        font-size: 10%;
-        letter-spacing: 1px;
+    /*jumbotron*/
+    .jumbotron .jumbo-wrapper {
+        padding-top: 6em;
     }
 
     .jumbotron .title span {
-        padding-top: 3em;
-        margin-right: 0.8em;
-        font-size: 150%;
-        font-weight: 900;
-        letter-spacing: 5px;
+        font-size: 120%;
+    }
+
+    .jumbotron .sub-title span {
+        font-size: 25%;
+        letter-spacing: 2px;
     }
 }
