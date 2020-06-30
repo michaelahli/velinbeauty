@@ -382,6 +382,6 @@ a {
     .jumbotron .sub-title span {
         font-size: 25%;
         letter-spacing: 0;
-        padding-left: 0;
+        padding-left: 0.5;
     }
 }
