@@ -328,24 +328,62 @@ a {
 
 @media(max-width:700px) {
 
+    /*Header*/
+    .header .menu-toggle i {
+        font-size: 1.5em;
+    }
+
     /*Jumbotron*/
     .jumbotron .sub-title span {
-        float: right;
         padding-top: 26em;
         margin-right: -20em;
         font-size: 50%;
         letter-spacing: 3px;
-        font-weight: bold;
-        color: #A14391;
     }
 
     .jumbotron .title span {
-        float: right;
         padding-top: 4em;
         margin-right: 0.5em;
         font-size: 200%;
         font-weight: 900;
-        color: white;
+        letter-spacing: 5px;
+    }
+}
+
+@media(max-width:450px) {
+
+    .header .menu-toggle i {
+        font-size: 1.5em;
+    }
+
+    .header .logo img {
+        width: 5em;
+        padding-top: 0.5em;
+    }
+
+    .jumbotron {
+        background-image: url(../img/jumbotron.png);
+        height: 150vh;
+        border-style: none;
+        margin-top: -4.5em;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /*background-size:contain;*/
+    }
+
+    /*Jumbotron*/
+    .jumbotron .sub-title span {
+        padding-top: 29.5em;
+        margin-right: -20.5em;
+        font-size: 35%;
+        letter-spacing: 2px;
+    }
+
+    .jumbotron .title span {
+        padding-top: 5.5em;
+        margin-right: 0.5em;
+        font-size: 130%;
+        font-weight: 900;
         letter-spacing: 5px;
     }
 }
