@@ -1,0 +1,279 @@
+body {
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header .full {
+    display: none;
+}
+
+.header .menu-toggle {
+    display: none;
+}
+
+.header .logo {
+    text-align: center;
+}
+
+.header .logo img {
+    cursor: pointer;
+    width: 9em;
+    margin-top: -1em;
+    transform: translateX(-100rem);
+    animation: slideIn 2.5s forwards;
+}
+
+.header .left,
+.header .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header .right li {
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+}
+
+.header .left li {
+    list-style: none;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+}
+
+.header .left li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.header .left li:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.header .right li:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.header .right li:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.header .left a,
+.header .right a {
+    margin-right: 2em;
+    margin-left: 2em;
+    letter-spacing: 2px;
+}
+
+.header .right a::before,
+.header .right a::after,
+.header .left a::before,
+.header .left a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: purple;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+.header .right a:hover::before,
+.header .right a:hover::after,
+.header .left a:hover::before,
+.header .left a:hover::after {
+    transform: scaleX(1);
+}
+
+.header .left a::before {
+    top: -1em;
+    transform-origin: left;
+}
+
+.header .left a::after {
+    bottom: -1em;
+    transform-origin: right;
+}
+
+.header .right a::before {
+    top: -0.9em;
+    transform-origin: left;
+}
+
+.header .right a::after {
+    bottom: -1em;
+    transform-origin: right;
+}
+
+.overlay {
+    background-color: purple;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: opacity 650ms;
+    transform: scale(0);
+    opacity: 0;
+    display: none;
+    z-index: -1000;
+}
+
+.header .full ul {
+    display: flex;
+}
+
+.header .full li {
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+}
+
+.header .full li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.header .full li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.header .full li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.header .full li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.header .full a {
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.header .full a::before,
+.header .full a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: crimson;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+.header .full a::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.header .full a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.header .full a:hover::before,
+.header .full a:hover::after {
+    transform: scaleX(1);
+}
+
+@keyframes slideIn {
+    from {}
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media(max-width:1200px) {
+    .header .right a::after {
+        bottom: 0.2em;
+    }
+
+    .header .full {
+        display: none;
+    }
+}
+
+@media(max-width:1000px) {
+
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header .logo {
+        text-align: left;
+    }
+
+    .header .left,
+    .header .right {
+        display: none;
+    }
+
+    .header .full {
+        display: block;
+    }
+
+    .header ul {
+        display: block;
+    }
+
+    .header .menu-toggle {
+        display: block;
+    }
+
+    .header .menu-toggle i {
+        float: right;
+        font-size: 2.5em;
+        padding-right: 1em;
+        padding-top: 1em;
+        color: black;
+        cursor: pointer;
+        /*ganti*/
+    }
+
+    .header .full {
+        padding-top: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        grid-column: 1/3;
+        height: 100vh;
+        display: none;
+    }
+
+    .header .full ul {
+        flex-direction: column;
+    }
+
+    .header .full li {
+        display: block;
+        margin-top: 5em;
+    }
+
+    .menu-open {
+        display: flex;
+        transform: scale(1);
+        opacity: 1;
+    }
+}

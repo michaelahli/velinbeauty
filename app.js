@@ -32,7 +32,7 @@ app.set('view engine', 'handlebars');
 
 //routes
 app.use('/', (req, res) => {
-    res.send('Welcome to velinbeauty.com');
+    res.render('default/index');
 });
 
 //creating server with express.js
