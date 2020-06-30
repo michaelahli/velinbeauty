@@ -374,14 +374,14 @@ a {
     /*Jumbotron*/
     .jumbotron .sub-title span {
         padding-top: 15em;
-        margin-right: -15em;
+        margin-right: -14em;
         font-size: 10%;
         letter-spacing: 1px;
     }
 
     .jumbotron .title span {
         padding-top: 4em;
-        margin-right: 0.5em;
+        margin-right: 1em;
         font-size: 130%;
         font-weight: 900;
         letter-spacing: 5px;
