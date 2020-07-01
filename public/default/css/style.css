@@ -7,6 +7,10 @@ body {
     grid-template-columns: 1fr;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -236,6 +240,14 @@ a {
     color: purple;
 }
 
+/*Content*/
+.content-wrapper {
+    background-image: url(../img/background.png);
+    height: 735vh;
+    background-repeat: no-repeat;
+}
+
+
 @keyframes slideIn {
     from {}
 
@@ -323,6 +335,10 @@ a {
 
     .header {
         background-color: transparent;
+    }
+
+    .content-wrapper {
+        margin-top: -28.7em;
     }
 }
 
