@@ -247,6 +247,36 @@ a {
     background-repeat: no-repeat;
 }
 
+/*Product Carousel*/
+.content-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.product-carousel {
+    margin-top: 5em;
+}
+
+.product {}
+
+.product .title {
+    position: absolute;
+    padding-right: 38.5%;
+    top: 10%;
+    left: 3%;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.product .description {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    color: white;
+    background-color: rgb(243, 144, 197, 0.27);
+    padding: 2em;
+}
 
 @keyframes slideIn {
     from {}
