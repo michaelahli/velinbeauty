@@ -218,24 +218,6 @@ a {
     max-width: 100%;
 }
 
-.jumbotron .title span {
-    position: absolute;
-    font-size: 600%;
-    color: white;
-    letter-spacing: 5px;
-    font-weight: bold;
-    top: 50%;
-    left: 60%;
-}
-
-.jumbotron .sub-title span {
-    position: absolute;
-    top: 90%;
-    left: 60%;
-    font-size: 120%;
-    letter-spacing: 8px;
-    color: purple;
-}
 
 /*claim*/
 .claim {
@@ -408,20 +390,8 @@ a {
         background-color: transparent;
     }
 
-    .jumbotron .title span {
-        position: absolute;
-        font-size: 300%;
-        letter-spacing: 5px;
-        top: 30%;
-        left: 60%;
-    }
-
-    .jumbotron .sub-title span {
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        font-size: 80%;
-        letter-spacing: 4px;
+    .jumbotron {
+        margin-top: -7em;
     }
 }
 
@@ -433,21 +403,6 @@ a {
     }
 
     /*jumbotron*/
-    .jumbotron .title span {
-        position: absolute;
-        font-size: 200%;
-        letter-spacing: 5px;
-        top: 25%;
-        left: 60%;
-    }
-
-    .jumbotron .sub-title span {
-        position: absolute;
-        top: 40%;
-        left: 60%;
-        font-size: 50%;
-        letter-spacing: 3px;
-    }
 }
 
 @media(max-width:450px) {
@@ -463,23 +418,9 @@ a {
     }
 
     /*jumbotron*/
-
-    .jumbotron .title span {
-        position: absolute;
-        font-size: 120%;
-        letter-spacing: 5px;
-        top: 15%;
-        left: 65%;
+    .jumbotron {
+        margin-top: -5em;
     }
-
-    .jumbotron .sub-title span {
-        position: absolute;
-        top: 25%;
-        left: 65%;
-        font-size: 25%;
-        letter-spacing: 1px;
-    }
-
 }
 
 @media(max-width:300px) {}
