@@ -212,17 +212,20 @@ a {
 .jumbotron {
     z-index: 1;
     margin-top: -8.5em;
+    margin-bottom: -0.5em;
 }
 
 .jumbotron img {
     max-width: 100%;
 }
 
-
 /*claim*/
 .claim {
-    background-color: blue;
-    padding: 1em 0;
+    text-align: center;
+    padding: 3em 0;
+    font-size: 200%;
+    font-weight: bold;
+    color: purple;
 }
 
 /*Content*/
@@ -236,9 +239,7 @@ a {
 
 /*Product Carousel*/
 
-.product-carousel {
-    margin-top: 5em;
-}
+.product-carousel {}
 
 .product {
     margin: 0 2em;
@@ -300,22 +301,6 @@ a {
 
     .header .full {
         display: none;
-    }
-
-    .jumbotron .title span {
-        position: absolute;
-        font-size: 500%;
-        letter-spacing: 5px;
-        top: 30%;
-        left: 60%;
-    }
-
-    .jumbotron .sub-title span {
-        position: absolute;
-        top: 65%;
-        left: 61%;
-        font-size: 90%;
-        letter-spacing: 8px;
     }
 }
 
@@ -393,6 +378,10 @@ a {
     .jumbotron {
         margin-top: -7em;
     }
+
+    .claim {
+        font-size: 150%;
+    }
 }
 
 @media(max-width:700px) {
@@ -402,7 +391,9 @@ a {
         font-size: 1.5em;
     }
 
-    /*jumbotron*/
+    .claim {
+        font-size: 100%;
+    }
 }
 
 @media(max-width:450px) {
@@ -420,6 +411,10 @@ a {
     /*jumbotron*/
     .jumbotron {
         margin-top: -5em;
+    }
+
+    .claim {
+        font-size: 70%;
     }
 }
 
