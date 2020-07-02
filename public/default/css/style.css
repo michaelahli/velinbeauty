@@ -226,10 +226,21 @@ a {
     font-size: 200%;
     font-weight: 900;
     color: purple;
-    text-decoration: underline;
+    margin: 0 30%;
+    /*text-decoration: underline;*/
 }
 
+.claim .fa-quote-left {
+    font-size: 0.5em;
+    position: absolute;
+    left: 25%;
+}
 
+.claim .fa-quote-right {
+    font-size: 0.5em;
+    position: absolute;
+    right: 25%;
+}
 
 /*Content*/
 .content-wrapper {
