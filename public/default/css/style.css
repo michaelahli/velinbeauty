@@ -408,6 +408,11 @@ a {
     .claim {
         font-size: 100%;
     }
+
+    .owl-dot {
+        height: 7px !important;
+        width: 7px !important;
+    }
 }
 
 @media(max-width:450px) {
@@ -441,6 +446,7 @@ a {
         position: absolute;
         right: 23%;
     }
+
 }
 
 @media(max-width:300px) {}
