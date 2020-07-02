@@ -34,8 +34,10 @@ $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 20,
-        autoplay: true,
+        //autoplay: true,
         responsiveClass: true,
+        touchDrag: true,
+        dots: true,
         responsive: {
             0: {
                 items: 1,
