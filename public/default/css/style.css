@@ -435,3 +435,9 @@ a {
     }
 
 }
+
+@media(max-width:300px) {
+    .jumbotron {
+        height: 120vh;
+    }
+}
