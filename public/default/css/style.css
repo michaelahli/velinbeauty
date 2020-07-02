@@ -431,6 +431,16 @@ a {
         font-size: 70%;
         margin: 0 25%;
     }
+
+    .claim .fa-quote-left {
+        position: absolute;
+        left: 27%;
+    }
+
+    .claim .fa-quote-right {
+        position: absolute;
+        right: 27%;
+    }
 }
 
 @media(max-width:300px) {}
