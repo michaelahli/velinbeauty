@@ -300,6 +300,38 @@ a {
     height: 30em;
 }
 
+.to-start {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5em;
+}
+
+.to-start .main-title {
+    text-align: center;
+    font-size: 300%;
+    margin: 2em;
+    font-weight: 900;
+    letter-spacing: 10px;
+    color: purple;
+}
+
+.to-start .step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.to-start .picture {
+    text-align: center;
+}
+
+.to-start .step .title {
+    font-size: 200%;
+    padding: 2em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: purple;
+}
+
 @keyframes slideIn {
     from {}
 
@@ -412,6 +444,15 @@ a {
     .owl-dot {
         height: 7px !important;
         width: 7px !important;
+    }
+
+    .to-start .step {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+    }
+
+    .to-start .move {
+        grid-row: 1/2;
     }
 }
 
