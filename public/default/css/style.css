@@ -212,7 +212,7 @@ a {
 
 .jumbotron {
     background-image: url(../img/jumbotron.png);
-    height: 150vh;
+    height: auto;
     border-style: none;
     margin-top: -8.5em;
     background-repeat: no-repeat;
