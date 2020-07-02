@@ -324,12 +324,61 @@ a {
     text-align: center;
 }
 
+.to-start .picture img {
+    width: 70%;
+}
+
 .to-start .step .title {
     font-size: 200%;
     padding: 2em;
     font-weight: bold;
     letter-spacing: 5px;
     color: purple;
+}
+
+.to-start .description {
+    font: 150%;
+    margin: 0 4em;
+}
+
+.to-start .blue-right {
+    width: 400px;
+    height: 125px;
+    background-color: skyblue;
+    position: absolute;
+    margin-top: 2em;
+    z-index: -2;
+}
+
+.to-start .pink-right {
+    width: 325px;
+    height: 300px;
+    background-color: pink;
+    left: 70%;
+    position: absolute;
+    margin-top: 8em;
+    z-index: -1;
+}
+
+.to-start .blue-left {
+    width: 400px;
+    height: 125px;
+    background-color: skyblue;
+    position: absolute;
+    margin-top: 2em;
+    left: 15%;
+    z-index: -2;
+}
+
+.to-start .pink-left {
+    width: 325px;
+    height: 300px;
+    background-color: pink;
+    position: absolute;
+    left: 3%;
+    margin-top: 8em;
+    z-index: -1;
+
 }
 
 @keyframes slideIn {
@@ -439,6 +488,7 @@ a {
 
     .claim {
         font-size: 100%;
+        letter-spacing: 2px;
     }
 
     .owl-dot {
@@ -453,6 +503,20 @@ a {
 
     .to-start .move {
         grid-row: 1/2;
+    }
+
+    .blue-right,
+    .blue-left,
+    .pink-right,
+    .pink-left {
+        display: none;
+    }
+
+    .to-start .main-title {
+        font-size: 200%;
+        margin: 0 2em;
+        letter-spacing: 3px;
+        margin-top: 1em;
     }
 }
 
@@ -480,12 +544,12 @@ a {
 
     .claim .fa-quote-left {
         position: absolute;
-        left: 23%;
+        left: 22%;
     }
 
     .claim .fa-quote-right {
         position: absolute;
-        right: 23%;
+        right: 22%;
     }
 
 }
