@@ -209,35 +209,31 @@ a {
 }
 
 /*jumbotron*/
-
 .jumbotron {
-    background-image: url(../img/jumbotron.png);
-    height: auto;
-    border-style: none;
-    margin-top: -8.5em;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /*background-size:contain;*/
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     z-index: 1;
+    margin-top: -8.5em;
 }
 
-.jumbotron .jumbo-wrapper {
-    padding-top: 20em;
+.jumbotron img {
+    max-width: 100%;
 }
 
 .jumbotron .title span {
+    position: absolute;
     font-size: 600%;
     color: white;
     letter-spacing: 5px;
     font-weight: bold;
+    top: 50%;
+    left: 60%;
 }
 
 .jumbotron .sub-title span {
+    position: absolute;
+    top: 90%;
+    left: 60%;
     font-size: 120%;
     letter-spacing: 8px;
-    padding-left: 0.5em;
     color: purple;
 }
 
@@ -323,6 +319,22 @@ a {
     .header .full {
         display: none;
     }
+
+    .jumbotron .title span {
+        position: absolute;
+        font-size: 500%;
+        letter-spacing: 5px;
+        top: 30%;
+        left: 60%;
+    }
+
+    .jumbotron .sub-title span {
+        position: absolute;
+        top: 65%;
+        left: 61%;
+        font-size: 90%;
+        letter-spacing: 8px;
+    }
 }
 
 @media(max-width:1000px) {
@@ -395,6 +407,22 @@ a {
     .header {
         background-color: transparent;
     }
+
+    .jumbotron .title span {
+        position: absolute;
+        font-size: 300%;
+        letter-spacing: 5px;
+        top: 30%;
+        left: 60%;
+    }
+
+    .jumbotron .sub-title span {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        font-size: 80%;
+        letter-spacing: 4px;
+    }
 }
 
 @media(max-width:700px) {
@@ -405,15 +433,18 @@ a {
     }
 
     /*jumbotron*/
-    .jumbotron .jumbo-wrapper {
-        padding-top: 8em;
-    }
-
     .jumbotron .title span {
+        position: absolute;
         font-size: 200%;
+        letter-spacing: 5px;
+        top: 25%;
+        left: 60%;
     }
 
     .jumbotron .sub-title span {
+        position: absolute;
+        top: 40%;
+        left: 60%;
         font-size: 50%;
         letter-spacing: 3px;
     }
@@ -431,28 +462,22 @@ a {
         animation: slideIn 1s forwards;
     }
 
-    .jumbotron {
-        background-image: url(../img/jumbotron.png);
-        border-style: none;
-        margin-top: -4.5em;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        /*background-size:contain;*/
-    }
-
     /*jumbotron*/
-    .jumbotron .jumbo-wrapper {
-        padding-top: 6em;
-    }
 
     .jumbotron .title span {
+        position: absolute;
         font-size: 120%;
+        letter-spacing: 5px;
+        top: 15%;
+        left: 65%;
     }
 
     .jumbotron .sub-title span {
+        position: absolute;
+        top: 25%;
+        left: 65%;
         font-size: 25%;
-        letter-spacing: 0;
-        padding-left: 0.5;
+        letter-spacing: 1px;
     }
 
 }
