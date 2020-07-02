@@ -538,18 +538,20 @@ a {
     }
 
     .claim {
-        font-size: 70%;
-        margin: 0 25%;
+        font-size: 80%;
+        margin: 10% 20%;
     }
 
     .claim .fa-quote-left {
         position: absolute;
-        left: 22%;
+        left: 15%;
+        font-size: 1em;
     }
 
     .claim .fa-quote-right {
         position: absolute;
-        right: 22%;
+        right: 15%;
+        font-size: 1em;
     }
 
 }
