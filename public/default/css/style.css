@@ -381,6 +381,61 @@ a {
 
 }
 
+
+.to-start .button-right button,
+.to-start .button-left button {
+    display: inline-block;
+    /*border-radius: 4px;*/
+    background-color: purple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em;
+    width: 10em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+
+.to-start .button-right button {
+    margin-left: 6em;
+}
+
+.to-start .button-left button {
+    margin-left: 8em;
+}
+
+.to-start .button-right button span,
+.to-start .button-left button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.to-start .button-right button span:after,
+.to-start .button-left button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.to-start .button-right button:hover span,
+.to-start .button-left button:hover span {
+    padding-right: 25px;
+}
+
+.to-start .button-right button:hover span:after,
+.to-start .button-left button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 @keyframes slideIn {
     from {}
 
@@ -517,6 +572,15 @@ a {
         margin: 0 2em;
         letter-spacing: 3px;
         margin-top: 1em;
+    }
+
+    .to-start .button-right button,
+    .to-start .button-left button {
+        font-size: 1em;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 3em;
+        width: 70%;
     }
 }
 
