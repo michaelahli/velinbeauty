@@ -715,6 +715,10 @@ a {
     .reviews {
         grid-template-columns: 1fr;
     }
+
+    .reviews .title {
+        font-size: 2em;
+    }
 }
 
 @media(max-width:450px) {
