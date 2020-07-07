@@ -449,7 +449,7 @@ a {
     color: purple;
     text-align: center;
     padding-top: 25%;
-    background-color: pink;
+    background-color: rgb(243, 144, 197, 0.5);
     margin-bottom: 0.775em;
 }
 
@@ -491,7 +491,7 @@ a {
     bottom: 8px;
     width: 100%;
     text-align: center;
-    background-color: rgb(243, 144, 197, 0.8);
+    background-color: rgb(243, 144, 197, 0.1);
 }
 
 /* Number text (1/3 etc) */
@@ -528,8 +528,29 @@ a {
 
 
 .footer {
-    background-color: #C182B7;
+    background-color: rgb(243, 144, 197, 0.8);
+    padding: 2em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.footer .title {
+    color: purple;
+    font-size: 1.2em;
+}
+
+.footer ul {
+    margin-left: -12%;
+}
+
+
+.footer .footer-social .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    margin-top: 1em;
+}
+
 
 @-webkit-keyframes fade {
     from {
@@ -659,7 +680,8 @@ a {
     }
 
     .content-wrapper {
-        height: 735vh;
+        height: 800vh;
+        /*735vh;*/
     }
 }
 
@@ -718,6 +740,19 @@ a {
 
     .reviews .title {
         font-size: 2em;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer .footer-resources {
+        grid-column: 1/2;
+    }
+
+    .footer .footer-contact {
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
 }
 
