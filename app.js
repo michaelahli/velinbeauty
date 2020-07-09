@@ -31,9 +31,8 @@ app.engine('handlebars', hbs({
 app.set('view engine', 'handlebars');
 
 //routes
-app.use('/', (req, res) => {
-    res.render('default/index');
-});
+const defaultRoutes = require('./routes/defaultRoutes');
+app.use('/', defaultRoutes);
 
 //creating server with express.js
 app.listen(PORT, () => {
