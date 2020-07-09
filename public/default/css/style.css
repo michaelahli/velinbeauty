@@ -805,6 +805,10 @@ a {
     .footer .footer-contact span {
         font-size: 0.7em;
     }
+
+    .content-wrapper {
+        background-image: url(../img/backgroundx.png);
+    }
 }
 
 @media(max-width:450px) {
