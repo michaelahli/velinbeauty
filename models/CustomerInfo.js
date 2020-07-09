@@ -28,4 +28,4 @@ const CustomerInfoSchema = new Schema({
     },
 });
 
-module.exports = mongoose.model('customer', CustomerInfoSchema)
+module.exports = mongoose.model('customer', CustomerInfoSchema);

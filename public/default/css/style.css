@@ -590,6 +590,10 @@ a {
     vertical-align: middle;
 }
 
+select {
+    display: none;
+}
+
 
 @-webkit-keyframes fade {
     from {

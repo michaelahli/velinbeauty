@@ -1,0 +1,16 @@
+<form action="/customize" method="post">
+    <div class="section-one">
+        <input type="radio" value="Straight" name="hairType" id="straight"><label for="straight">Straight</label>
+        <input type="radio" value="Wavy" name="hairType" id="wavy"></input><label for="wavy">Wavy</label>
+        <input type="radio" value="Curly" name="hairType" id="curly"></input><label for="curly">Curly</label>
+    </div>
+    <span id="result"></span>
+    <select name="product" id="product">
+        <option value="Straight"></option>
+        <option value="Curly"></option>
+        <option value="Wavy"></option>
+    </select>
+    <br>
+    <button type="submit">Finish</button>
+</form><button id="getValue" onclick="getValue()">Get Value</button>
+<script src="/default/js/customize.js"></script>
