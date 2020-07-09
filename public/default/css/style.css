@@ -801,6 +801,10 @@ a {
     .footer .footer-social img {
         margin-right: 0;
     }
+
+    .footer .footer-contact span {
+        font-size: 0.7em;
+    }
 }
 
 @media(max-width:450px) {
