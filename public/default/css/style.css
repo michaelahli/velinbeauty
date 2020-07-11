@@ -591,10 +591,11 @@ a {
 }
 
 .bg-image {
-    background-image: url(../img/backgroundx.png);
+    background-image: url(../img/background.jpg);
     padding-bottom: 2em;
     padding-top: 10em;
     margin-top: -10em;
+    color: purple;
 }
 
 .bg-image img {
@@ -615,6 +616,10 @@ a {
     font-weight: bold;
 }
 
+.choose input:checked+label img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .section-activity {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -629,12 +634,17 @@ a {
     font-weight: bold;
 }
 
+.section-activity input:checked+label img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .task {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: bold;
     margin-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: -0.5em;
+    color: white;
 }
 
 .hair-finished {
@@ -653,6 +663,12 @@ a {
 
 .hair-finished button:hover {
     opacity: 0.8;
+}
+
+.bg-image .box {
+    background-color: rgba(243, 101, 243, 0.4);
+    margin: 0 10%;
+    padding: 3em 0;
 }
 
 @-webkit-keyframes fade {
