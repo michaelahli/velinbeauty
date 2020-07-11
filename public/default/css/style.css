@@ -595,7 +595,10 @@ a {
     padding-bottom: 2em;
     padding-top: 10em;
     margin-top: -10em;
-    z-index: -2;
+}
+
+.bg-image img {
+    cursor: pointer;
 }
 
 .choose {
