@@ -806,6 +806,14 @@ a {
     .footer .footer-contact {
         padding-top: 0;
     }
+
+    .task {
+        font-size: 2em;
+    }
+
+    .bg-image img {
+        width: 10em;
+    }
 }
 
 @media(max-width:700px) {
@@ -883,11 +891,23 @@ a {
     }
 
     .footer .footer-contact span {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     .content-wrapper {
         background-image: url(../img/backgroundx.png);
+    }
+
+    .task {
+        font-size: 1.5em;
+    }
+
+    .bg-image img {
+        width: 7em;
+    }
+
+    .bg-image .box {
+        margin: 0;
     }
 }
 
@@ -923,6 +943,14 @@ a {
         position: absolute;
         right: 11%;
         font-size: 1em;
+    }
+
+    .task {
+        font-size: 1.5em;
+    }
+
+    .bg-image img {
+        width: 6em;
     }
 
 }
