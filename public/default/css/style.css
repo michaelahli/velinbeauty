@@ -590,6 +590,13 @@ a {
     vertical-align: middle;
 }
 
+.bg-image {
+    background-image: url(../img/backgroundx.png);
+    padding-bottom: 2em;
+    padding-top: 10em;
+    margin-top: -10em;
+}
+
 .choose {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -616,6 +623,32 @@ a {
 
 .section-activity input:checked+label {
     font-weight: bold;
+}
+
+.task {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.hair-finished {
+    text-align: center;
+    margin: 2em;
+}
+
+.hair-finished button {
+    border: none;
+    color: white;
+    background-color: purple;
+    padding: 1em 4em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.hair-finished button:hover {
+    opacity: 0.8;
 }
 
 @-webkit-keyframes fade {
