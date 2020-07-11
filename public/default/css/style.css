@@ -671,6 +671,60 @@ a {
     padding: 3em 0;
 }
 
+.problem-box2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin: 2em 10%;
+}
+
+.problem-box3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin: 2em 10%;
+}
+
+.problem-box4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin: 2em 10%;
+}
+
+.problem-box input {
+    display: none;
+}
+
+.problem-box .problem-single-box input:checked+label {
+    font-weight: 900;
+    font-size: 1.2em;
+    background-color: rgb(128, 240, 229, 0.3);
+}
+
+.problem-single-box {
+    padding: 1em 0;
+    background-color: rgb(128, 240, 229);
+}
+
+.problem-box3 .problem-single-box {
+    margin: 0 20%;
+}
+
+.problem-box4 .problem-single-box {
+    margin: 0 15%;
+}
+
+.problem-box2 .problem-single-box {
+    margin: 0 30%;
+}
+
+.keratin-box {
+    text-align: center;
+}
+
+
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
