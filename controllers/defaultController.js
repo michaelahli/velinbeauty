@@ -1,5 +1,5 @@
-const Product = require('../models/GetProduct');
-
+const Hair = require('../models/HairModel');
+var HairID;
 module.exports = {
     index: (req, res) => {
         res.render('default/index');
@@ -10,11 +10,15 @@ module.exports = {
     },
 
     getProduct: (req, res) => {
-        const getProduct = new Product({
-            product: req.body.product
+        const hairType = new Hair({
+            hairtype: req.body.hairType,
+            activity: req.body.activity,
+            moisture: req.body.moisture
         });
-        getProduct.save().then(product => {
-            console.log(product);
+        hairType.save().then(hairtype => {
+            console.log(hairtype);
+            HairID = hairType.id;
+            console.log('id : ' + HairID);
             res.redirect('/customize');
         })
     }

@@ -22,9 +22,9 @@ const CustomerInfoSchema = new Schema({
         type: String,
         required: true
     },
-    item: {
-        type: String,
-        required: true
+    hairmodel: {
+        type: Schema.Types.ObjectId,
+        ref: 'hair'
     },
 });
 
