@@ -1,0 +1,21 @@
+<div class="bg-image">
+    <form action="/solve" method="POST">
+        <input type="checkbox" name="problems" id="problem1" value="A">
+        <label for="problem1">A</label>
+        <input type="checkbox" name="problems" id="problem2" value="B">
+        <label for="problem2">B</label>
+        <input type="checkbox" name="problems" id="problem3" value="C">
+        <label for="problem3">C</label>
+        <label for="keratin">
+            <input type="checkbox" id="keratin" name="keratin">
+            Add Keratin to My Formula
+        </label>
+        <button type="submit">SAVE</button>
+
+    </form>
+    <ul>
+        {{#each problem}}
+        <li>{{problem}}{{keratin}}</li>
+        {{/each}}
+    </ul>
+</div>

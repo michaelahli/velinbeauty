@@ -1,4 +1,6 @@
 const Hair = require('../models/HairModel');
+const Problem = require('../models/ProblemModel')
+
 var HairID;
 module.exports = {
     index: (req, res) => {
@@ -19,7 +21,31 @@ module.exports = {
             console.log(hairtype);
             HairID = hairType.id;
             console.log('id : ' + HairID);
-            res.redirect('/customize');
+            res.redirect('/solve');
+        })
+    },
+
+    solve: (req, res) => {
+        Problem.find().lean().then(problem => {
+            res.render('default/solve', {
+                problem: problem
+            })
+        });
+    },
+
+    getProblem: (req, res) => {
+        var problems = req.body.problems;
+        var addkeratin = req.body.keratin ? true : false;
+
+        const Solve = new Problem({
+            problem: problems,
+            keratin: addkeratin
+        });
+        Solve.save().then(problems => {
+            console.log(problems);
+            res.redirect('/solve');
         })
     }
+
+
 }
