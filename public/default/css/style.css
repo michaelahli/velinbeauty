@@ -1038,4 +1038,10 @@ a {
         width: 6em;
     }
 
+    .problem-box2,
+    .problem-box3,
+    .problem-box4 {
+        font-size: 0.45em;
+    }
+
 }
