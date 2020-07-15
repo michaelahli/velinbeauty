@@ -1,14 +1,15 @@
 const Hair = require('../models/HairModel');
-const Problem = require('../models/ProblemModel')
+const Problem = require('../models/ProblemModel');
+const FnC = require('../models/FnCModel');
 
-var HairID;
+var HairID, ProblemID, FnCID;
 module.exports = {
     index: (req, res) => {
         res.render('default/index');
     },
 
     customize: (req, res) => {
-        res.render('default/customize')
+        res.render('default/customize');
     },
 
     getProduct: (req, res) => {
@@ -42,10 +43,29 @@ module.exports = {
             keratin: addkeratin
         });
         Solve.save().then(problems => {
+            ProblemID = Solve.id;
             console.log(problems);
-            res.redirect('/solve');
+            console.log("id : " + ProblemID);
+            res.redirect('/appearance-and-fragrance');
         })
-    }
+    },
+
+    appearanceandfragrance: (req, res) => {
+        res.render('default/appearance-and-fragrance');
+    },
+    getFnC: (req, res) => {
+
+        const fragranceandcolor = new FnC({
+            fragrance: req.body.fragrance,
+            color: req.body.color
+        });
+        fragranceandcolor.save().then(fnc => {
+            FnCID = fragranceandcolor.id;
+            console.log(fnc);
+            console.log("id : " + FnCID);
+            res.redirect('/appearance-and-fragrance');
+        })
+    },
 
 
 }

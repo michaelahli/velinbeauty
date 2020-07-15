@@ -720,9 +720,80 @@ a {
 
 .keratin-box {
     text-align: center;
+    margin-top: 1em;
 }
 
+.fragrance {
+    margin-bottom: 1em;
+}
 
+.fragrance-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: -0.5em;
+    letter-spacing: 10px;
+}
+
+.single-fragrance {
+    text-align: center;
+    padding: 1em 0;
+    border: 1px solid pink;
+    background-color: rgb(231, 158, 225);
+    margin: 1em 5em;
+    border-radius: 1em;
+}
+
+.single-fragrance:hover {
+    background-color: rgb(226, 138, 219);
+}
+
+.single-fragrance input {
+    display: none;
+}
+
+.single-fragrance input:checked+label {
+    font-weight: 900;
+    color: purple;
+}
+
+.single-fragrance label {
+    color: white;
+    font-size: 1.5em;
+    padding: 1% 50%;
+    cursor: pointer;
+}
+
+.color-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    margin-bottom: -0.5em;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.color .content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.single-color label {
+    border-radius: 100%;
+}
+
+.single-color input {
+    display: none;
+}
+
+.single-color img {
+    width: 5em;
+}
+
+.single-color input:checked+label {
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 @-webkit-keyframes fade {
     from {

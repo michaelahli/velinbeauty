@@ -26,6 +26,14 @@ const CustomerInfoSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'hair'
     },
+    problemmodel: {
+        type: Schema.Types.ObjectId,
+        ref: 'problem'
+    },
+    fragranceandcolormodel: {
+        type: Schema.Types.ObjectId,
+        ref: 'fragranceandcolor'
+    },
 });
 
 module.exports = mongoose.model('customer', CustomerInfoSchema);
