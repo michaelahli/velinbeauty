@@ -944,6 +944,10 @@ a {
     .problem-box4 {
         font-size: 0.8em;
     }
+
+    .single-color img {
+        width: 4em;
+    }
 }
 
 @media(max-width:700px) {
@@ -1065,6 +1069,26 @@ a {
     .keratin-box {
         font-size: 0.7em;
     }
+
+    .fragrance-title {
+        font-size: 2em;
+    }
+
+    .single-fragrance {
+        margin: 1em 3em;
+    }
+
+    .single-fragrance label {
+        font-size: 1em;
+    }
+
+    .color-title {
+        font-size: 2em;
+    }
+
+    .single-color img {
+        width: 3em;
+    }
 }
 
 @media(max-width:450px) {
@@ -1113,6 +1137,26 @@ a {
     .problem-box3,
     .problem-box4 {
         font-size: 0.45em;
+    }
+
+    .fragrance-title {
+        font-size: 2em;
+    }
+
+    .single-fragrance {
+        margin: 1em 3em;
+    }
+
+    .single-fragrance label {
+        font-size: 1em;
+    }
+
+    .color-title {
+        font-size: 2em;
+    }
+
+    .single-color img {
+        width: 3em;
     }
 
 }
