@@ -10,6 +10,10 @@ const CustomerInfoSchema = new Schema({
         type: String,
         required: true
     },
+    province: {
+        type: String,
+        required: true
+    },
     address: {
         type: String,
         required: true

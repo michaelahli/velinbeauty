@@ -795,6 +795,11 @@ a {
     box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.id-payment-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 @-webkit-keyframes fade {
     from {
         opacity: .4

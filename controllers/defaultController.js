@@ -1,6 +1,7 @@
 const Hair = require('../models/HairModel');
 const Problem = require('../models/ProblemModel');
 const FnC = require('../models/FnCModel');
+const Customer = require('../models/CustomerInfo');
 
 var HairID, ProblemID, FnCID;
 module.exports = {
@@ -63,9 +64,28 @@ module.exports = {
             FnCID = fragranceandcolor.id;
             console.log(fnc);
             console.log("id : " + FnCID);
-            res.redirect('/appearance-and-fragrance');
-        })
+            res.redirect('/id-and-payment');
+        });
     },
 
+    idandpayment: (req, res) => {
+        res.render('default/id-and-payment');
+    },
 
+    getCustomerInfo: (req, res) => {
+        const CustomerID = new Customer({
+            name: req.body.name,
+            province: req.body.province,
+            address: req.body.address,
+            phone: req.body.phone,
+            email: req.body.email,
+            hairmodel: HairID,
+            problemmodel: ProblemID,
+            fragranceandcolormodel: FnCID
+        });
+        CustomerID.save().then(customer => {
+            console.log(customer);
+            res.redirect('id-and-payment');
+        });
+    }
 }
