@@ -11,46 +11,105 @@
 
 <body>
     <div class="bg-image">
-        <div class="id-payment-wrapper box">
+        <div class="id-payment-wrapper">
+
             <div class="fill">
                 <form action="" method="post">
                     <div class="customer-id">
                         <div class="name">
                             <label for="name">Full Name</label>
-                            <input type="text" name="name" id="name" placeholder="Enter Your Full Name">
+                            <input type="text" name="name" id="name" placeholder="Enter Your Full Name"
+                                class="customerid">
                         </div>
                         <div class="address">
-                            <span>Address</span>
-                            <select name="province" id="province">
+                            <label for="province">Address</label>
+                            <select name="province" id="province" class="province">
                                 <option value="JawaTimur">Jawa Timur</option>
                                 <option value="JawaTengah">Jawa Tengah</option>
                                 <option value="JawaBarat">Jawa Barat</option>
                                 <option value="DKIJakarta">DKI JAKARTA</option>
                             </select>
-                            <input type="text" name="address" id="address" placeholder="Enter Your Full Adress">
+                            <input type="text" name="address" id="address" placeholder="Enter Your Full Adress"
+                                class="customerid">
                         </div>
                         <div class="phone">
                             <label for="phone">Phone Number</label>
-                            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number"
+                                class="customerid">
                         </div>
                         <div class="email">
                             <label for="email">E-mail</label>
-                            <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                            <input type="text" name="email" id="email" placeholder="Enter Your Email"
+                                class="customerid">
                         </div>
                     </div>
+                    <div class="confirm-button ">
+                        <button>Confirm Payment</button>
+                    </div>
                 </form>
+                <div class="pricing ">
+                    <div class="left bold">
+                        <div class="unique-code">
+                            UNIQUE CODE
+                        </div>
+                        <div class="price">
+                            PRICE
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="unique-code">
+                            012
+                        </div>
+                        <div class="price">
+                            Rp 120.012,-
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pay">
+
+            <div class="pay box">
                 <div class="title">
-                    <span>Please Pay $$$ to the account below</span>
+                    Payment Transfer
                 </div>
                 <div class="account">
-                    <span>1234567890 (BCA) a/n Christine Velinsya</span>
+                    <img src="img/BCA.png" alt="BCA">
+                    <div class="left">
+                        <div class="bank">
+                            Bank
+                        </div>
+                        <div class="accnumber">
+                            Account Number
+                        </div>
+                        <div class="Receiver">
+                            Receiver
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="bank bold">
+                            BCA
+                        </div>
+                        <div class="accnumber bold">
+                            1234567890
+                        </div>
+                        <div class="receiver bold">
+                            Christine Velinsya
+                        </div>
+                    </div>
                 </div>
-                <div class="confirm-button">
-                    <button>Confirm Payment</button>
+                <div class="title">
+                    Confirm To
+                </div>
+                <div class="confirmation-number">
+                    <img src="img/logo_whatsapp.png" alt="Whatsapp">
+                    <div class="left">
+                        Christine Velinsya
+                    </div>
+                    <div class="right bold">
+                        6281388404255
+                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>
