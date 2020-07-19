@@ -858,6 +858,17 @@ a {
     background-color: rgb(52, 133, 52);
 }
 
+.fill .pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fill .pricing {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+
 .pay {
     box-shadow: 2px 2px 20px;
 }
@@ -898,17 +909,6 @@ a {
 .pay .confirmation-number>div {
     margin: 0 1em;
 }
-
-.fill .pricing {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.fill .pricing {
-    font-size: 1.5em;
-    letter-spacing: 5px;
-}
-
 
 @-webkit-keyframes fade {
     from {
@@ -1203,6 +1203,63 @@ a {
 
     .single-color img {
         width: 3em;
+    }
+
+    .id-payment-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /*sign*/
+    .fill {
+        grid-row: 2/3;
+        grid-template-columns: 1fr;
+        margin: 0 1em;
+    }
+
+    .fill div {
+        margin: 1em 0;
+    }
+
+    .fill .confirm-button button {
+        float: left;
+        padding: 1.5em 2em;
+        letter-spacing: 3px;
+        margin-bottom: 1em;
+    }
+
+    .fill .pricing {
+        font-size: 1em;
+        letter-spacing: 5px;
+    }
+
+    .fill .customerid {
+        padding: 1em 0.1em;
+    }
+
+    .fill select {
+        width: 5em;
+    }
+
+    .pay .title {
+        font-size: 1em;
+        margin-bottom: .5em;
+        padding-bottom: .5em;
+        margin: 0 1em;
+    }
+
+    .pay .account div {
+        margin: 0 .5em;
+        margin-bottom: 1em;
+    }
+
+    .pay .account img,
+    .pay .confirmation-number img {
+        margin: .5em 1em;
+    }
+
+    .pay .confirmation-number>div {
+        margin: 0 1em;
     }
 }
 
