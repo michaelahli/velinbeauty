@@ -85,7 +85,7 @@ module.exports = {
         });
         CustomerID.save().then(customer => {
             console.log(customer);
-            res.redirect('id-and-payment');
+            res.redirect('https://wa.me/6281388404255');
         });
     }
 }
