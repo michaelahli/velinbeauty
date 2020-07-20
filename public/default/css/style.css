@@ -1139,8 +1139,8 @@ a {
         margin-right: 0;
     }
 
-    .footer .footer-contact span {
-        font-size: 0.5em;
+    .footer .footer-contact {
+        font-size: 0.8em;
     }
 
     .content-wrapper {
@@ -1264,6 +1264,10 @@ a {
 }
 
 @media(max-width:450px) {
+    .content-wrapper {
+        height: 750vh;
+        /*735vh;*/
+    }
 
     .header .menu-toggle i {
         font-size: 1.5em;
