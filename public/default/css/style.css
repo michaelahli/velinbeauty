@@ -245,6 +245,7 @@ a {
 /*Content*/
 .content-wrapper {
     background-image: url(../img/background.jpg);
+    height: 580vh;
     background-repeat: no-repeat;
     max-width: 100%;
     overflow: hidden;
@@ -1037,6 +1038,7 @@ a {
     }
 
     .content-wrapper {
+        height: 800vh;
         /*735vh;*/
     }
 
@@ -1262,7 +1264,10 @@ a {
 }
 
 @media(max-width:450px) {
-    .content-wrapper {}
+    .content-wrapper {
+        height: 700vh;
+        /*735vh;*/
+    }
 
     .header .menu-toggle i {
         font-size: 1.5em;
