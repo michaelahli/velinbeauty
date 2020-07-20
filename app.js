@@ -32,7 +32,9 @@ app.set('view engine', 'handlebars');
 
 //routes
 const defaultRoutes = require('./routes/defaultRoutes');
+const adminRoutes = require('./routes/adminRoutes');
 app.use('/', defaultRoutes);
+app.use('/admin', adminRoutes);
 
 //creating server with express.js
 app.listen(PORT, () => {
