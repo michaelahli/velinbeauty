@@ -2,7 +2,7 @@
     <div class="id-payment-wrapper">
 
         <div class="fill">
-            <form action="" method="post">
+            <form action="/id-and-payment" method="post">
                 <div class="customer-id">
                     <div class="name">
                         <label for="name">Full Name</label>
@@ -32,6 +32,7 @@
                 <div class="confirm-button ">
                     <button>Confirm Payment</button>
                 </div>
+                <input type="radio" value="total" id="total" name="total" checked="checked">
             </form>
             <div class="pricing ">
                 <div class="left bold">
@@ -43,10 +44,10 @@
                     </div>
                 </div>
                 <div class="right">
-                    <div class="unique-code">
+                    <div class="unique-code" id="unique-code">
                         012
                     </div>
-                    <div class="price">
+                    <div class="price" id="price">
                         Rp 120.012,-
                     </div>
                 </div>

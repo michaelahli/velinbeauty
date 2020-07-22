@@ -910,6 +910,10 @@ a {
     margin: 0 1em;
 }
 
+#total {
+    display: none;
+}
+
 @-webkit-keyframes fade {
     from {
         opacity: .4

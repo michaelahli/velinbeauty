@@ -79,6 +79,7 @@ module.exports = {
             address: req.body.address,
             phone: req.body.phone,
             email: req.body.email,
+            total: req.body.total,
             hairmodel: HairID,
             problemmodel: ProblemID,
             fragranceandcolormodel: FnCID

@@ -85,6 +85,8 @@ $(document).ready(function () {
         }, 500);
     });
 
+
+
 });
 
 var slideIndex = 0;

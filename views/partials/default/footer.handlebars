@@ -56,7 +56,37 @@
 
 </div>
 </div>
+
 <script src="/default/js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("select.province").change(function () {
+            var province = $(this).children("option:selected").val();
+            var price = 0;
+            if (province == 'JawaTimur') {
+                price = 250000;
+            } else if (province == 'JawaTengah') {
+                price = 275000;
+            } else if (province == 'JawaBarat') {
+                price = 300000;
+            } else {
+                price = 350000;
+            }
+            var number = 0;
+            var digits = '';
+
+            for (i = 0; i < 3; i++) {
+                number = Math.floor(Math.random() * 10);
+                digits = digits + number.toString();
+            }
+            digits = parseInt(digits)
+            total = price + digits
+            document.getElementById("total").value = total.toString();
+            $('#unique-code').empty().append(digits);
+            $('#price').empty().append('Rp ' + total);
+        });
+    });
+</script>
 <script src="/default/js/owl.carousel.min.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="/default/js/index.js"></script>
