@@ -1273,6 +1273,10 @@ a {
         /*735vh;*/
     }
 
+    .reviews img {
+        height: 2.5em;
+    }
+
     .header .menu-toggle i {
         font-size: 1.5em;
     }
