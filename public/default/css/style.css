@@ -1269,7 +1269,7 @@ a {
 
 @media(max-width:450px) {
     .content-wrapper {
-        height: 650vh;
+        height: 700vh;
         /*735vh;*/
     }
 
