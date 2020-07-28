@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
     <div class="main-wrapper">
         <div class="header">
             <nav class="left">
@@ -313,6 +316,11 @@
 
     </div>
     <script src="js/jquery.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/index.js"></script>
