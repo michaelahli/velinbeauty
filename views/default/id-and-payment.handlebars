@@ -2,35 +2,37 @@
     <div class="id-payment-wrapper">
 
         <div class="fill">
-            <form action="/id-and-payment" method="post">
+            <form action="/id-and-payment" method="post" onsubmit="check()">
                 <div class="customer-id">
                     <div class="name">
                         <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter Your Full Name" class="customerid">
+                        <input type="text" name="name" id="name" placeholder="Enter Your Full Name" class="customerid"
+                            required>
                     </div>
                     <div class="address">
                         <label for="province">Address</label>
-                        <select name="province" id="province" class="province">
+                        <select name="province" id="province" class="province" required>
                             <option value="JawaTimur">Jawa Timur</option>
                             <option value="JawaTengah">Jawa Tengah</option>
                             <option value="JawaBarat">Jawa Barat</option>
                             <option value="DKIJakarta">DKI JAKARTA</option>
                         </select>
                         <input type="text" name="address" id="address" placeholder="Enter Your Full Adress"
-                            class="customerid">
+                            class="customerid" required>
                     </div>
                     <div class="phone">
                         <label for="phone">Phone Number</label>
                         <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number"
-                            class="customerid">
+                            class="customerid" required>
                     </div>
                     <div class="email">
                         <label for="email">E-mail</label>
-                        <input type="text" name="email" id="email" placeholder="Enter Your Email" class="customerid">
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email" class="customerid"
+                            required>
                     </div>
                 </div>
                 <div class="confirm-button ">
-                    <button>Confirm Payment</button>
+                    <button type="submit">Confirm Payment</button>
                 </div>
                 <input type="radio" value="total" id="total" name="total" checked="checked">
             </form>
@@ -45,10 +47,10 @@
                 </div>
                 <div class="right">
                     <div class="unique-code" id="unique-code">
-                        012
+                        000
                     </div>
                     <div class="price" id="price">
-                        Rp 120.012,-
+                        Rp 0,-
                     </div>
                 </div>
             </div>

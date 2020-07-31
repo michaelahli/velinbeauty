@@ -21,6 +21,35 @@ open.addEventListener("click", function () {
     }
 });
 
+function check() {
+    var name = document.getElementById(name).value;
+    var address = document.getElementById(address).value;
+    var phone = document.getElementById(phone).value;
+    var email = document.getElementById(email).value;
+    var total = document.getElementById(total).value;
+    if (name == "") {
+        alert("Username is obligatory");
+        return false;
+    }
+    if (address == "") {
+        alert("Address is obligatory");
+        return false;
+    }
+    if (phone == "") {
+        alert("Phone number is obligatory");
+        return false;
+    }
+    if (email == "") {
+        alert("Email is obligatory");
+        return false;
+    }
+    if (total == "") {
+        alert("Please Choose Your Province");
+        return false;
+    }
+    return true;
+}
+
 function toggle() {
     var x = document.getElementById("nav");
     if (x.style.display === "block") {

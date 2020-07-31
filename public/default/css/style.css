@@ -1389,7 +1389,6 @@ a {
 
     /*sign*/
     .fill {
-        grid-row: 2/3;
         grid-template-columns: 1fr;
         margin: 0 1em;
     }
