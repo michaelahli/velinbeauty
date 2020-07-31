@@ -269,7 +269,7 @@ a {
 }
 
 .jumbotron img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /*claim*/
@@ -295,15 +295,15 @@ a {
 }
 
 .claim .fa-quote-left {
-    font-size: 0.5em;
+    font-size: 1.5em;
     position: absolute;
-    left: 25%;
+    left: 10%;
 }
 
 .claim .fa-quote-right {
-    font-size: 0.5em;
+    font-size: 1.5em;
     position: absolute;
-    right: 25%;
+    right: 10%;
 }
 
 /*Content*/
@@ -358,9 +358,7 @@ a {
     margin: 50px 5px 0;
 }
 
-.product img {
-    height: 30em;
-}
+/*.product img {}*/
 
 .to-start {
     display: grid;
@@ -585,7 +583,7 @@ a {
     height: 7px;
     width: 7px;
     margin: 0 2px;
-    background-color: #bbb;
+    /*background-color: #bbb;*/
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -1464,16 +1462,20 @@ a {
         margin: 10% 15%;
     }
 
+    .claim .bp {
+        font-size: 0.8em;
+    }
+
     .claim .fa-quote-left {
         position: absolute;
-        left: 11%;
-        font-size: 1em;
+        left: 8%;
+        font-size: 2em;
     }
 
     .claim .fa-quote-right {
         position: absolute;
-        right: 11%;
-        font-size: 1em;
+        right: 8%;
+        font-size: 2em;
     }
 
     .task {
