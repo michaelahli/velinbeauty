@@ -309,7 +309,7 @@ a {
 /*Content*/
 .content-wrapper {
     background-image: url(../img/background.jpg);
-    height: 615vh;
+    background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
     overflow: hidden;
@@ -514,7 +514,7 @@ a {
 }
 
 .reviews {
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 .reviews .title {
@@ -537,7 +537,6 @@ a {
 
 .reviews img {
     max-width: 50%;
-    height: 20em;
 }
 
 .reviews .customer-carousel {
@@ -1197,7 +1196,6 @@ a {
     }
 
     .content-wrapper {
-        height: 800vh;
         /*735vh;*/
     }
 
@@ -1428,7 +1426,6 @@ a {
 
 @media(max-width:450px) {
     .content-wrapper {
-        height: 700vh;
         /*735vh;*/
     }
 
