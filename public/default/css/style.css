@@ -585,7 +585,7 @@ a {
     height: 7px;
     width: 7px;
     margin: 0 2px;
-    /*background-color: #bbb;*/
+    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -1197,6 +1197,22 @@ a {
 
     .content-wrapper {
         /*735vh;*/
+    }
+
+    .caption {
+        font-size: 1em;
+    }
+
+    .hp-title {
+        font-size: 2em;
+    }
+
+    .keratin-box {
+        margin-top: 5em;
+    }
+
+    .keratin-formula {
+        font-size: 0.5em;
     }
 
     .footer .footer-contact {
