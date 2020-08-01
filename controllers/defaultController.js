@@ -75,7 +75,7 @@ module.exports = {
     getCustomerInfo: (req, res) => {
         const CustomerID = new Customer({
             name: req.body.name,
-            province: req.body.province,
+            city: req.body.city,
             address: req.body.address,
             phone: req.body.phone,
             email: req.body.email,
