@@ -31,7 +31,7 @@ module.exports = {
         Problem.find().lean().then(problem => {
             res.render('default/solve', {
                 problem: problem
-            })
+            });
         });
     },
 

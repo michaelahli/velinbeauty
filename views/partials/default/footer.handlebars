@@ -59,14 +59,80 @@
 
 <script src="/default/js/jquery.js"></script>
 <script>
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
     $(document).ready(function () {
+        var keratin;
+        $("#keratin").change(function () {
+            keratin = $(this).prop("checked");
+            setCookie("keratin", keratin, 30);
+        });
+
         $("select.province").change(function () {
+            var keratin_ = getCookie("keratin");
             var province = $(this).children("option:selected").val();
+            var bool_value = keratin_ == "true" ? true : false;
             var price = 0;
-            if (province == 'JawaTimur') {
-                price = 250000;
-            } else if (province == 'JawaTengah') {
-                price = 275000;
+            if (bool_value == true) {
+                price = 120000;
+            } else {
+                price = 110000;
+            }
+            if (province == 'KotaSurabaya') {
+                price += 8000;
+            } else if (province == 'KotaProbolinggo' |
+                province == 'KotaPasuruan' |
+                province == 'KotaMalang' |
+                province == 'KotaMojokerto' |
+                province == 'KotaMadiun' |
+                province == 'KotaKediri' |
+                province == 'KotaBlitar' |
+                province == 'KotaBatu' |
+                province == 'KabTulungagung' |
+                province == 'KabTuban' |
+                province == 'KabTrenggalek' |
+                province == 'KabSumenep' |
+                province == 'KabSitubondo' |
+                province == 'KabSidoarjo' |
+                province == 'KabSampang' |
+                province == 'KabPonorogo' |
+                province == 'KabPasuruan' |
+                province == 'KabPamekasan' |
+                province == 'KabPacitan' |
+                province == 'KabNgawi' |
+                province == 'KabNganjuk' |
+                province == 'KabMagetan' |
+                province == 'KabLumajang' |
+                province == 'KabLamongan' |
+                province == 'KabJombang' |
+                province == 'KabJember' |
+                province == 'KabGresik' |
+                province == 'KabBondowoso' |
+                province == 'KabBojonegoro' |
+                province == 'KabBlitar' |
+                province == 'KabBanyuwangi' |
+                province == 'KabBangkalan') {
+                price += 14000;
             } else if (province == 'JawaBarat') {
                 price = 300000;
             } else {

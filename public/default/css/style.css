@@ -948,7 +948,7 @@ a {
 
 .id-payment-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .fill {
@@ -1009,12 +1009,13 @@ a {
     background-color: rgb(52, 133, 52);
 }
 
-.fill .pricing {
+.pricing {
+    margin: 1em 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.fill .pricing {
+.pricing {
     font-size: 1.5em;
     letter-spacing: 5px;
 }
@@ -1402,7 +1403,7 @@ a {
         margin-bottom: 1em;
     }
 
-    .fill .pricing {
+    .pricing {
         font-size: 1em;
         letter-spacing: 5px;
     }
