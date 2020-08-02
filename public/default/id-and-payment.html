@@ -14,40 +14,160 @@
         <div class="id-payment-wrapper">
 
             <div class="fill">
-                <form action="" method="post">
+                <form action="/id-and-payment" method="post" onsubmit="check()">
                     <div class="customer-id">
                         <div class="name">
                             <label for="name">Full Name</label>
                             <input type="text" name="name" id="name" placeholder="Enter Your Full Name"
-                                class="customerid">
+                                class="customerid" required>
                         </div>
                         <div class="address">
                             <label for="province">Address</label>
-                            <select name="province" id="province" class="province">
+                            <select name="province" id="province" class="province" required>
                                 <option value="JawaTimur">Jawa Timur</option>
-                                <option value="JawaTengah">Jawa Tengah</option>
                                 <option value="JawaBarat">Jawa Barat</option>
-                                <option value="DKIJakarta">DKI JAKARTA</option>
+                                <option value="DKIJakarta">DKI Jakarta</option>
+                                <option value="Banten">Banten</option>
+                                <option value="JawaTengah">Jawa Tengah</option>
+                                <option value="DIY">Yogyakarta</option>
+                            </select>
+                            <select name="city" id="JawaTimur" class="city">
+                                <option value="KotaSurabaya">Kota Surabaya</option>
+                                <option value="KotaProbolinggo">Kota Probolinggo</option>
+                                <option value="KotaPasuruan">Kota Pasuruan</option>
+                                <option value="KotaMojokerto">Kota Mojokerto</option>
+                                <option value="KotaMalang">Kota Malang</option>
+                                <option value="KotaMadiun">Kota Madiun</option>
+                                <option value="KotaKediri">Kota Kediri</option>
+                                <option value="KotaBlitar">Kota Blitar</option>
+                                <option value="KotaBatu">Kota Batu</option>
+                                <option value="KabTulungagung">Kab. Tulungagung</option>
+                                <option value="KabTuban">Kab. Tuban</option>
+                                <option value="KabTrenggalek">Kab. Trenggalek</option>
+                                <option value="KabSumenep">Kab. Sumenep</option>
+                                <option value="KabSitubondo">Kab. Situbondo</option>
+                                <option value="KabSidoarjo">Kab. Sidoarjo</option>
+                                <option value="KabSampang">Kab. Sampang</option>
+                                <option value="KabPonorogo">Kab. Ponorogo</option>
+                                <option value="KabPasuruan">Kab. Pasuruan</option>
+                                <option value="KabPamekasan">Kab. Pamekasan</option>
+                                <option value="KabPacitan">Kab. Pacitan</option>
+                                <option value="KabNgawi">Kab. Ngawi</option>
+                                <option value="KabNganjuk">Kab. Nganjuk</option>
+                                <option value="KabMagetan">Kab. Magetan</option>
+                                <option value="KabLumajang">Kab. Lumajang</option>
+                                <option value="KabLamongan">Kab. Lamongan</option>
+                                <option value="KabJombang">Kab. Jombang</option>
+                                <option value="KabJember">Kab. Jember</option>
+                                <option value="KabGresik">Kab. Gresik</option>
+                                <option value="KabBondowoso">Kab. Bondowoso</option>
+                                <option value="KabBojonegoro">Kab. Bojonegoro</option>
+                                <option value="KabBlitar">Kab. Blitar</option>
+                                <option value="KabBanyuwangi">Kab. Banyuwangi</option>
+                                <option value="KabBangkalan">Kab. Bangkalan</option>
+                            </select>
+                            <select name="city" id="JawaBarat" class="city">
+                                <option value="KotaBandung">Kota Bandung</option>
+                                <option value="KotaBekasi">Kota Bekasi</option>
+                                <option value="KotaDepok">Kota Depok</option>
+                                <option value="KotaCimahi">Kota Cimahi</option>
+                                <option value="KotaTasikmalaya">Kota Tasikmalaya</option>
+                                <option value="KotaBogor">Kota Bogor</option>
+                                <option value="KabCiamis">Kab. Ciamis</option>
+                                <option value="KabCirebon">Kab. Cirebon</option>
+                                <option value="KabCianjur">Kab. Cianjur</option>
+                                <option value="KabGarut">Kab. Garut</option>
+                                <option value="KabIndramayu">Kab. Indramayu</option>
+                                <option value="KabKarawang">Kab. Karawang</option>
+                                <option value="KabKuningan">Kab. Kuningan</option>
+                                <option value="KabMajalengka">Kab. Majalengka</option>
+                                <option value="KabPangandaran">Kab. Pangandaran</option>
+                                <option value="KabPurwakarta">Kab. Purwakarta</option>
+                                <option value="KabSubang">Kab. Subang</option>
+                                <option value="KabSukabumi">Kab. Sukabumi</option>
+                                <option value="KabSumedang">Kab. Sumedang</option>
+                            </select>
+                            <select name="city" id="JawaTengah" class="city">
+                                <option value="KotaMagelang">Kota Magelang</option>
+                                <option value="KotaPekalongan">Kota Pekalongan</option>
+                                <option value="KotaSalatiga">Kota Salatiga</option>
+                                <option value="KotaSemarang">Kota Semarang</option>
+                                <option value="KotaSurakarta">Kota Surakarta</option>
+                                <option value="KabBlora">Kab. Blora</option>
+                                <option value="KabBanjarnegara">Kab. Banjarnegara</option>
+                                <option value="KabBanyumas">Kab. Banyumas</option>
+                                <option value="KabBatang">Kab. Batang</option>
+                                <option value="KabBoyolali">Kab. Boyolali</option>
+                                <option value="KabBrebes">Kab. Brebes</option>
+                                <option value="KabCilacap">Kab. Cilacap</option>
+                                <option value="KabDemak">Kab. Demak</option>
+                                <option value="KabGrobogan">Kab. Grobogan</option>
+                                <option value="KabJepara">Kab. Jepara</option>
+                                <option value="KabKaranganyar">Kab. Karangayar</option>
+                                <option value="KabKebumen">Kab. Kebumen</option>
+                                <option value="KabKendal">Kab. Kendal</option>
+                                <option value="KabKlaten">Kab. Klaten</option>
+                                <option value="KabKudus">Kab. Kudus</option>
+                                <option value="KabMagelang">Kab. Magelang</option>
+                                <option value="KabPati">Kab. Pati</option>
+                                <option value="KabPekalongan">Kab. Pekalongan</option>
+                                <option value="KabPemalang">Kab. Pemalang</option>
+                                <option value="KabPurbalingga">Kab. Purbalingga</option>
+                                <option value="KabPurworejo">Kab. Purworejo</option>
+                                <option value="KabRembang">Kab. Rembang</option>
+                                <option value="KabSragen">Kab. Sragen</option>
+                                <option value="KabSukoharjo">Kab. Sukoharjo</option>
+                                <option value="KabTegal">Kab. Tegal</option>
+                                <option value="KabTemanggung">Kab. Temanggung</option>
+                                <option value="KabWonogiri">Kab. Wonogiri</option>
+                                <option value="KabWonosobo">Kab. Wonosobo</option>
+                            </select>
+                            <select name="city" id="DKIJakarta" class="city">
+                                <option value="JakartaTimur">Jakarta Timur</option>
+                                <option value="JakartaBarat">Jakarta Barat</option>
+                                <option value="JakartaSelatan">Jakarta Selatan</option>
+                                <option value="JakartaUtara">Jakarta Utara</option>
+                                <option value="JakartaPusat">Jakarta Pusat</option>
+                            </select>
+                            <select name="city" id="Banten" class="city">
+                                <option value="KotaCilegon">Kota Cilegon</option>
+                                <option value="KotaSerang">Kota Serang</option>
+                                <option value="KotaTangerang">Kota Tangerang</option>
+                                <option value="KotaTangerangSelatan">Kota Tangerang Selatan</option>
+                                <option value="KabLebak">Kab. Lebak</option>
+                                <option value="KabPandeglang">Kab. Pandeglang</option>
+                                <option value="KabSerang">Kab. Serang</option>
+                            </select>
+                            <select name="city" id="DIY" class="city">
+                                <option value="KotaYogyakarta">Kota Yogyakarta</option>
+                                <option value="KabSleman">Kab. Sleman</option>
+                                <option value="KabBantul">Kab. Bantul</option>
+                                <option value="KabGunungKidul">Kab. Gunung Kidul</option>
+                                <option value="KabKulonProgo">Kab. Kulon Progo</option>
                             </select>
                             <input type="text" name="address" id="address" placeholder="Enter Your Full Adress"
-                                class="customerid">
+                                class="customerid" required>
                         </div>
                         <div class="phone">
                             <label for="phone">Phone Number</label>
                             <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number"
-                                class="customerid">
+                                class="customerid" required>
                         </div>
                         <div class="email">
                             <label for="email">E-mail</label>
-                            <input type="text" name="email" id="email" placeholder="Enter Your Email"
-                                class="customerid">
+                            <input type="text" name="email" id="email" placeholder="Enter Your Email" class="customerid"
+                                required>
                         </div>
                     </div>
                     <div class="confirm-button ">
-                        <button>Confirm Payment</button>
+                        <button type="submit">Confirm Payment</button>
                     </div>
-                    <input type="checkbox" value="a" id="total">
+                    <input type="radio" value="total" id="total" name="total" checked="checked">
                 </form>
+            </div>
+
+            <div class="pay box">
+
                 <div class="pricing ">
                     <div class="left bold">
                         <div class="unique-code">
@@ -59,21 +179,18 @@
                     </div>
                     <div class="right">
                         <div class="unique-code" id="unique-code">
-                            012
+                            000
                         </div>
                         <div class="price" id="price">
-                            Rp 120.012,-
+                            Rp 0,-
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="pay box">
                 <div class="title">
                     Payment Transfer
                 </div>
                 <div class="account">
-                    <img src="img/BCA.png" alt="BCA">
+                    <img src="/default/img/BCA.png" alt="BCA">
                     <div class="left">
                         <div class="bank">
                             Bank
@@ -97,20 +214,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="title">
+                <!--<div class="title">
                     Confirm To
                 </div>
                 <div class="confirmation-number">
-                    <img src="img/logo_whatsapp.png" alt="Whatsapp">
+                    <img src="/default/img/logo_whatsapp.png" alt="Whatsapp">
                     <div class="left">
                         Christine Velinsya
                     </div>
                     <div class="right bold">
                         6281388404255
                     </div>
-                </div>
+                </div>-->
             </div>
-
 
         </div>
 

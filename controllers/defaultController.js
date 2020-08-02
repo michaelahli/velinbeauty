@@ -73,9 +73,27 @@ module.exports = {
     },
 
     getCustomerInfo: (req, res) => {
+        var province, city;
+        province = req.body.province;
+
+        if (province == 'JawaTimur') {
+            city = req.body.JawaTimur;
+        } else if (province == 'JawaBarat') {
+            city = req.body.JawaBarat;
+        } else if (province == 'JawaTengah') {
+            city = req.body.JawaTengah;
+        } else if (province == 'DIY') {
+            city = req.body.DIY;
+        } else if (province == 'DKIJakarta') {
+            city = req.body.DKIJakarta;
+        } else {
+            city = req.body.Banten;
+        }
+
         const CustomerID = new Customer({
             name: req.body.name,
-            city: req.body.city,
+            province: province,
+            city: city,
             address: req.body.address,
             phone: req.body.phone,
             email: req.body.email,
@@ -86,7 +104,7 @@ module.exports = {
         });
         CustomerID.save().then(customer => {
             console.log(customer);
-            res.redirect('https://wa.me/6281388404255');
+            res.redirect('https://wa.me/628973991345?text=Halo%20Admin,%20saya%20ingin%20mengkonfirmasi%20pembayaran%20saya%20disini.');
         });
     }
 }

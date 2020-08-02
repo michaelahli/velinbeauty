@@ -134,5 +134,37 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
+
+function scrollAppear() {
+    var contentleft = document.querySelector('.content-text-left');
+    var contentright = document.querySelector('.content-text-right');
+    var contentleft2 = document.querySelector('.content-text-left2');
+    var contentright2 = document.querySelector('.content-text-right2');
+    var claim = document.querySelector('.claim');
+    var contentPositionleft = contentleft.getBoundingClientRect().top;
+    var contentPositionright = contentright.getBoundingClientRect().top;
+    var contentPositionleft2 = contentleft2.getBoundingClientRect().top;
+    var contentPositionright2 = contentright2.getBoundingClientRect().top;
+    var claimPosition = claim.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.3;
+    var screenPositionc = window.innerHeight / 0.8;
+    if (contentPositionleft < screenPosition) {
+        contentleft.classList.add('appear');
+    }
+    if (contentPositionright < screenPosition) {
+        contentright.classList.add('appear');
+    }
+    if (contentPositionleft2 < screenPosition) {
+        contentleft2.classList.add('appear');
+    }
+    if (contentPositionright2 < screenPosition) {
+        contentright2.classList.add('appear');
+    }
+    if (claimPosition < screenPositionc) {
+        claim.classList.add('claim-appear');
+    }
+}
+
+window.addEventListener('scroll', scrollAppear);
