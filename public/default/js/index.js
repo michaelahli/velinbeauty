@@ -113,6 +113,15 @@ $(document).ready(function () {
             scrollTop: $($(this).attr("href")).offset().top
         }, 500);
     });
+    $("input[name=problems").change(function () {
+        var max = 3;
+        if ($("input[name=problems]:checked").length == max) {
+            $("input[name=problems]").attr('disabled', 'disabled');
+            $("input[name=problems]:checked").removeAttr('disabled');
+        } else {
+            $("input[name=problems]").removeAttr('disabled');
+        }
+    });
 });
 
 var slideIndex = 0;

@@ -104,6 +104,11 @@ module.exports = {
         });
         CustomerID.save().then(customer => {
             console.log(customer);
+            //req.client.messages.create({
+            //    from: 'whatsapp:+6281388404255',
+            //    body: 'Ahoy world!',
+            //    to: 'whatsapp:+628973991345'
+            //}).then(message => console.log(message.sid));
             res.redirect('https://wa.me/628973991345?text=Halo%20Admin,%20saya%20ingin%20mengkonfirmasi%20pembayaran%20saya%20disini.');
         });
     }
