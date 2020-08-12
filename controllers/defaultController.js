@@ -86,6 +86,8 @@ module.exports = {
             city = req.body.DIY;
         } else if (province == 'DKIJakarta') {
             city = req.body.DKIJakarta;
+        } else if (province == 'Bali') {
+            city = req.body.Bali;
         } else {
             city = req.body.Banten;
         }

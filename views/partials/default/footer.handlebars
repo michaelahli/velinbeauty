@@ -98,6 +98,7 @@
             var DKIJakarta = document.getElementById("DKIJakarta");
             var DIY = document.getElementById("DIY");
             var Banten = document.getElementById("Banten");
+            var Bali = document.getElementById("Bali");
             if (province == 'JawaTimur') {
                 JawaTimur.style.display = "block";
                 JawaBarat.style.display = "none";
@@ -105,6 +106,7 @@
                 DKIJakarta.style.display = "none";
                 DIY.style.display = "none";
                 Banten.style.display = "none";
+                Bali.style.display = "none";
             } else if (province == 'JawaTengah') {
                 JawaTimur.style.display = "none";
                 JawaBarat.style.display = "none";
@@ -112,6 +114,7 @@
                 DKIJakarta.style.display = "none";
                 Banten.style.display = "none";
                 DIY.style.display = "none";
+                Bali.style.display = "none";
             } else if (province == 'DKIJakarta') {
                 JawaTimur.style.display = "none";
                 JawaBarat.style.display = "none";
@@ -119,6 +122,7 @@
                 DKIJakarta.style.display = "block";
                 DIY.style.display = "none";
                 Banten.style.display = "none";
+                Bali.style.display = "none";
             } else if (province == 'DIY') {
                 JawaTimur.style.display = "none";
                 JawaBarat.style.display = "none";
@@ -126,6 +130,7 @@
                 DKIJakarta.style.display = "none";
                 DIY.style.display = "block";
                 Banten.style.display = "none";
+                Bali.style.display = "none";
             } else if (province == 'Banten') {
                 JawaTimur.style.display = "none";
                 JawaBarat.style.display = "none";
@@ -133,6 +138,15 @@
                 DKIJakarta.style.display = "none";
                 DIY.style.display = "none";
                 Banten.style.display = "block";
+                Bali.style.display = "none";
+            } else if (province == 'Bali') {
+                JawaTimur.style.display = "none";
+                JawaBarat.style.display = "none";
+                JawaTengah.style.display = "none";
+                DKIJakarta.style.display = "none";
+                DIY.style.display = "none";
+                Banten.style.display = "none";
+                Bali.style.display = "block";
             } else {
                 JawaTimur.style.display = "none";
                 JawaBarat.style.display = "block";
@@ -140,6 +154,7 @@
                 DKIJakarta.style.display = "none";
                 DIY.style.display = "none";
                 Banten.style.display = "none";
+                Bali.style.display = "none";
             }
         });
 
@@ -208,9 +223,8 @@
                 city == 'KabPurwakarta' |
                 city == 'KabSubang' |
                 city == 'KabSukabumi' |
-                city == 'KabSumedang') {
-                price += 24000;
-            } else if (city == 'KotaMagelang' |
+                city == 'KabSumedang' |
+                city == 'KotaMagelang' |
                 city == 'KotaPekalongan' |
                 city == 'KotaSalatiga' |
                 city == 'KotaSemarang' |
@@ -241,6 +255,17 @@
                 city == 'KabSukoharjo' |
                 city == 'KabTegal') {
                 price += 24000;
+            } else if (city == 'KabBadung' |
+                city == 'KabBangli' |
+                city == 'KabBuleleng' |
+                city == 'KabGianyar' |
+                city == 'KabJembrana' |
+                city == 'KabKarangasem' |
+                city == 'KabKlungklung' |
+                city == 'KabTabanan' |
+                city == 'KotaDenpasar'
+            ) {
+                price += 25000;
             } else if (city == 'JakartaTimur' |
                 city == 'JakartaPusat' |
                 city == 'JakartaBarat' |

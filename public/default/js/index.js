@@ -176,4 +176,4 @@ function showSlides() {
 //    }
 //}
 
-window.addEventListener('scroll', scrollAppear);
+//window.addEventListener('scroll', scrollAppear);
