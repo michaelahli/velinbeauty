@@ -283,9 +283,9 @@ a {
     display: grid;
     grid-template-columns: 1fr 5fr;
     /*text-decoration: underline;*/
-    opacity: 0;
+    /*opacity: 0;
     transform: translateY(20px);
-    transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;*/
 }
 
 .claim-appear {
@@ -377,7 +377,7 @@ a {
     grid-gap: 5em;
 }
 
-.content-text-right,
+/*.content-text-right,
 .content-text-right2 {
     opacity: 0;
     transform: translateX(50px);
@@ -394,7 +394,7 @@ a {
 .appear {
     opacity: 1;
     transform: translateX(0px);
-}
+}*/
 
 .to-start .main-title {
     text-align: center;
