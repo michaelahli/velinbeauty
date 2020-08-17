@@ -145,6 +145,10 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
 
 //function scrollAppear() {
 //    var contentleft = document.querySelector('.content-text-left');
