@@ -86,6 +86,18 @@
 
     $(document).ready(function () {
         var keratin;
+        var gratisongkir = new Boolean(false);
+
+        $("#check-promo").click(function () {
+            var code = $("#promo").val();
+            if (code == "CINTARAMBUTSEHAT") {
+                gratisongkir = true;
+                alert('Code Confirmed');
+            } else {
+                alert('Code Denied');
+            }
+        });
+
         $("#keratin").change(function () {
             keratin = $(this).prop("checked");
             setCookie("keratin", keratin, 30);
@@ -169,130 +181,258 @@
             } else {
                 price = 110000;
             }
-            if (city == 'KotaSurabaya') {
-                price += 8000;
-            } else if (city == 'KotaProbolinggo' |
-                city == 'KotaPasuruan' |
-                city == 'KotaMalang' |
-                city == 'KotaMojokerto' |
-                city == 'KotaMadiun' |
-                city == 'KotaKediri' |
-                city == 'KotaBlitar' |
-                city == 'KotaBatu' |
-                city == 'KabTulungagung' |
-                city == 'KabTuban' |
-                city == 'KabTrenggalek' |
-                city == 'KabSumenep' |
-                city == 'KabSitubondo' |
-                city == 'KabSidoarjo' |
-                city == 'KabSampang' |
-                city == 'KabPonorogo' |
-                city == 'KabPasuruan' |
-                city == 'KabPamekasan' |
-                city == 'KabPacitan' |
-                city == 'KabNgawi' |
-                city == 'KabNganjuk' |
-                city == 'KabMagetan' |
-                city == 'KabLumajang' |
-                city == 'KabLamongan' |
-                city == 'KabJombang' |
-                city == 'KabJember' |
-                city == 'KabGresik' |
-                city == 'KabBondowoso' |
-                city == 'KabBojonegoro' |
-                city == 'KabBlitar' |
-                city == 'KabBanyuwangi' |
-                city == 'KabBangkalan') {
-                price += 14000;
-            } else if (city == 'KotaBandung' |
-                city == 'KotaBekasi' |
-                city == 'KotaDepok' |
-                city == 'KotaTasikmalaya' |
-                city == 'KotaBogor' |
-                city == 'KotaCimahi') {
-                price += 20000;
-            } else if (
-                city == 'KabCiamis' |
-                city == 'KabCirebon' |
-                city == 'KabCianjur' |
-                city == 'KabGarut' |
-                city == 'KabIndramayu' |
-                city == 'KabKarawang' |
-                city == 'KabKuningan' |
-                city == 'KabMajalengka' |
-                city == 'KabPangandaran' |
-                city == 'KabPurwakarta' |
-                city == 'KabSubang' |
-                city == 'KabSukabumi' |
-                city == 'KabSumedang' |
-                city == 'KotaMagelang' |
-                city == 'KotaPekalongan' |
-                city == 'KotaSalatiga' |
-                city == 'KotaSemarang' |
-                city == 'KotaSurakarta' |
-                city == 'KabBlora' |
-                city == 'KabBanjarnegara' |
-                city == 'KabBanyumas' |
-                city == 'KabBatang' |
-                city == 'KabBoyolali' |
-                city == 'KabBrebes' |
-                city == 'KabCilacap' |
-                city == 'KabDemak' |
-                city == 'KabGrobogan' |
-                city == 'KabJepara' |
-                city == 'KabKaranganyar' |
-                city == 'KabKebumen' |
-                city == 'KabKendal' |
-                city == 'KabKlaten' |
-                city == 'KabKudus' |
-                city == 'KabMagelang' |
-                city == 'KabPati' |
-                city == 'KabPekalongan' |
-                city == 'KabPemalang' |
-                city == 'KabPurbalingga' |
-                city == 'KabPurworejo' |
-                city == 'KabRembang' |
-                city == 'KabSragen' |
-                city == 'KabSukoharjo' |
-                city == 'KabTegal') {
-                price += 24000;
-            } else if (city == 'KabBadung' |
-                city == 'KabBangli' |
-                city == 'KabBuleleng' |
-                city == 'KabGianyar' |
-                city == 'KabJembrana' |
-                city == 'KabKarangasem' |
-                city == 'KabKlungklung' |
-                city == 'KabTabanan' |
-                city == 'KotaDenpasar'
-            ) {
-                price += 25000;
-            } else if (city == 'JakartaTimur' |
-                city == 'JakartaPusat' |
-                city == 'JakartaBarat' |
-                city == 'JakartaSelatan' |
-                city == 'JakartaUtara' |
-                city == 'KotaYogyakarta') {
-                price += 15000;
-            } else if (city == 'KabTemanggung' |
-                city == 'KabWonogiri' |
-                city == 'KabWonosobo' |
-                city == 'KabLebak' |
-                city == 'KabPandeglang' |
-                city == 'KabSerang') {
-                price += 29000;
-            } else if (city == 'KotaCilegon' |
-                city == 'KotaSerang' |
-                city == 'KotaTangerang' |
-                city == 'KotaTangerangSelatan' |
-                city == 'KabSleman') {
-                price += 20000;
-            } else if (city == 'KabBantul' |
-                city == 'KabGunungKidul' |
-                city == 'KabKulonProgo') {
-                price += 23000;
+            if (gratisongkir == false) {
+                if (city == 'KotaSurabaya') {
+                    price += 8000;
+                } else if (city == 'KotaProbolinggo' |
+                    city == 'KotaPasuruan' |
+                    city == 'KotaMalang' |
+                    city == 'KotaMojokerto' |
+                    city == 'KotaMadiun' |
+                    city == 'KotaKediri' |
+                    city == 'KotaBlitar' |
+                    city == 'KotaBatu' |
+                    city == 'KabTulungagung' |
+                    city == 'KabTuban' |
+                    city == 'KabTrenggalek' |
+                    city == 'KabSumenep' |
+                    city == 'KabSitubondo' |
+                    city == 'KabSidoarjo' |
+                    city == 'KabSampang' |
+                    city == 'KabPonorogo' |
+                    city == 'KabPasuruan' |
+                    city == 'KabPamekasan' |
+                    city == 'KabPacitan' |
+                    city == 'KabNgawi' |
+                    city == 'KabNganjuk' |
+                    city == 'KabMagetan' |
+                    city == 'KabLumajang' |
+                    city == 'KabLamongan' |
+                    city == 'KabJombang' |
+                    city == 'KabJember' |
+                    city == 'KabGresik' |
+                    city == 'KabBondowoso' |
+                    city == 'KabBojonegoro' |
+                    city == 'KabBlitar' |
+                    city == 'KabBanyuwangi' |
+                    city == 'KabBangkalan') {
+                    price += 14000;
+                } else if (city == 'KotaBandung' |
+                    city == 'KotaBekasi' |
+                    city == 'KotaDepok' |
+                    city == 'KotaTasikmalaya' |
+                    city == 'KotaBogor' |
+                    city == 'KotaCimahi') {
+                    price += 20000;
+                } else if (
+                    city == 'KabCiamis' |
+                    city == 'KabCirebon' |
+                    city == 'KabCianjur' |
+                    city == 'KabGarut' |
+                    city == 'KabIndramayu' |
+                    city == 'KabKarawang' |
+                    city == 'KabKuningan' |
+                    city == 'KabMajalengka' |
+                    city == 'KabPangandaran' |
+                    city == 'KabPurwakarta' |
+                    city == 'KabSubang' |
+                    city == 'KabSukabumi' |
+                    city == 'KabSumedang' |
+                    city == 'KotaMagelang' |
+                    city == 'KotaPekalongan' |
+                    city == 'KotaSalatiga' |
+                    city == 'KotaSemarang' |
+                    city == 'KotaSurakarta' |
+                    city == 'KabBlora' |
+                    city == 'KabBanjarnegara' |
+                    city == 'KabBanyumas' |
+                    city == 'KabBatang' |
+                    city == 'KabBoyolali' |
+                    city == 'KabBrebes' |
+                    city == 'KabCilacap' |
+                    city == 'KabDemak' |
+                    city == 'KabGrobogan' |
+                    city == 'KabJepara' |
+                    city == 'KabKaranganyar' |
+                    city == 'KabKebumen' |
+                    city == 'KabKendal' |
+                    city == 'KabKlaten' |
+                    city == 'KabKudus' |
+                    city == 'KabMagelang' |
+                    city == 'KabPati' |
+                    city == 'KabPekalongan' |
+                    city == 'KabPemalang' |
+                    city == 'KabPurbalingga' |
+                    city == 'KabPurworejo' |
+                    city == 'KabRembang' |
+                    city == 'KabSragen' |
+                    city == 'KabSukoharjo' |
+                    city == 'KabTegal') {
+                    price += 24000;
+                } else if (city == 'KabBadung' |
+                    city == 'KabBangli' |
+                    city == 'KabBuleleng' |
+                    city == 'KabGianyar' |
+                    city == 'KabJembrana' |
+                    city == 'KabKarangasem' |
+                    city == 'KabKlungklung' |
+                    city == 'KabTabanan' |
+                    city == 'KotaDenpasar'
+                ) {
+                    price += 25000;
+                } else if (city == 'JakartaTimur' |
+                    city == 'JakartaPusat' |
+                    city == 'JakartaBarat' |
+                    city == 'JakartaSelatan' |
+                    city == 'JakartaUtara' |
+                    city == 'KotaYogyakarta') {
+                    price += 15000;
+                } else if (city == 'KabTemanggung' |
+                    city == 'KabWonogiri' |
+                    city == 'KabWonosobo' |
+                    city == 'KabLebak' |
+                    city == 'KabPandeglang' |
+                    city == 'KabSerang') {
+                    price += 29000;
+                } else if (city == 'KotaCilegon' |
+                    city == 'KotaSerang' |
+                    city == 'KotaTangerang' |
+                    city == 'KotaTangerangSelatan' |
+                    city == 'KabSleman') {
+                    price += 20000;
+                } else if (city == 'KabBantul' |
+                    city == 'KabGunungKidul' |
+                    city == 'KabKulonProgo') {
+                    price += 23000;
+                } else {
+                    price = 0;
+                }
             } else {
-                price = 0;
+                if (city == 'KotaSurabaya') {
+                    price += 0;
+                } else if (city == 'KotaProbolinggo' |
+                    city == 'KotaPasuruan' |
+                    city == 'KotaMalang' |
+                    city == 'KotaMojokerto' |
+                    city == 'KotaMadiun' |
+                    city == 'KotaKediri' |
+                    city == 'KotaBlitar' |
+                    city == 'KotaBatu' |
+                    city == 'KabTulungagung' |
+                    city == 'KabTuban' |
+                    city == 'KabTrenggalek' |
+                    city == 'KabSumenep' |
+                    city == 'KabSitubondo' |
+                    city == 'KabSidoarjo' |
+                    city == 'KabSampang' |
+                    city == 'KabPonorogo' |
+                    city == 'KabPasuruan' |
+                    city == 'KabPamekasan' |
+                    city == 'KabPacitan' |
+                    city == 'KabNgawi' |
+                    city == 'KabNganjuk' |
+                    city == 'KabMagetan' |
+                    city == 'KabLumajang' |
+                    city == 'KabLamongan' |
+                    city == 'KabJombang' |
+                    city == 'KabJember' |
+                    city == 'KabGresik' |
+                    city == 'KabBondowoso' |
+                    city == 'KabBojonegoro' |
+                    city == 'KabBlitar' |
+                    city == 'KabBanyuwangi' |
+                    city == 'KabBangkalan') {
+                    price += 0;
+                } else if (city == 'KotaBandung' |
+                    city == 'KotaBekasi' |
+                    city == 'KotaDepok' |
+                    city == 'KotaTasikmalaya' |
+                    city == 'KotaBogor' |
+                    city == 'KotaCimahi') {
+                    price += 0;
+                } else if (
+                    city == 'KabCiamis' |
+                    city == 'KabCirebon' |
+                    city == 'KabCianjur' |
+                    city == 'KabGarut' |
+                    city == 'KabIndramayu' |
+                    city == 'KabKarawang' |
+                    city == 'KabKuningan' |
+                    city == 'KabMajalengka' |
+                    city == 'KabPangandaran' |
+                    city == 'KabPurwakarta' |
+                    city == 'KabSubang' |
+                    city == 'KabSukabumi' |
+                    city == 'KabSumedang' |
+                    city == 'KotaMagelang' |
+                    city == 'KotaPekalongan' |
+                    city == 'KotaSalatiga' |
+                    city == 'KotaSemarang' |
+                    city == 'KotaSurakarta' |
+                    city == 'KabBlora' |
+                    city == 'KabBanjarnegara' |
+                    city == 'KabBanyumas' |
+                    city == 'KabBatang' |
+                    city == 'KabBoyolali' |
+                    city == 'KabBrebes' |
+                    city == 'KabCilacap' |
+                    city == 'KabDemak' |
+                    city == 'KabGrobogan' |
+                    city == 'KabJepara' |
+                    city == 'KabKaranganyar' |
+                    city == 'KabKebumen' |
+                    city == 'KabKendal' |
+                    city == 'KabKlaten' |
+                    city == 'KabKudus' |
+                    city == 'KabMagelang' |
+                    city == 'KabPati' |
+                    city == 'KabPekalongan' |
+                    city == 'KabPemalang' |
+                    city == 'KabPurbalingga' |
+                    city == 'KabPurworejo' |
+                    city == 'KabRembang' |
+                    city == 'KabSragen' |
+                    city == 'KabSukoharjo' |
+                    city == 'KabTegal') {
+                    price += 0;
+                } else if (city == 'KabBadung' |
+                    city == 'KabBangli' |
+                    city == 'KabBuleleng' |
+                    city == 'KabGianyar' |
+                    city == 'KabJembrana' |
+                    city == 'KabKarangasem' |
+                    city == 'KabKlungklung' |
+                    city == 'KabTabanan' |
+                    city == 'KotaDenpasar'
+                ) {
+                    price += 0;
+                } else if (city == 'JakartaTimur' |
+                    city == 'JakartaPusat' |
+                    city == 'JakartaBarat' |
+                    city == 'JakartaSelatan' |
+                    city == 'JakartaUtara' |
+                    city == 'KotaYogyakarta') {
+                    price += 0;
+                } else if (city == 'KabTemanggung' |
+                    city == 'KabWonogiri' |
+                    city == 'KabWonosobo' |
+                    city == 'KabLebak' |
+                    city == 'KabPandeglang' |
+                    city == 'KabSerang') {
+                    price += 0;
+                } else if (city == 'KotaCilegon' |
+                    city == 'KotaSerang' |
+                    city == 'KotaTangerang' |
+                    city == 'KotaTangerangSelatan' |
+                    city == 'KabSleman') {
+                    price += 0;
+                } else if (city == 'KabBantul' |
+                    city == 'KabGunungKidul' |
+                    city == 'KabKulonProgo') {
+                    price += 0;
+                } else {
+                    price = 0;
+                }
             }
             var number = 0;
             var digits = '';

@@ -1068,12 +1068,16 @@ a {
     margin: 0 1em;
 }
 
+#promo {
+    padding: 0.5em 0em;
+}
+
 .bold {
     font-weight: 900;
 }
 
 .pay .account,
-.pay .confirmation-number {
+.pay .promo-code {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -1083,15 +1087,22 @@ a {
     margin-bottom: 1em;
 }
 
-.pay .account img,
-.pay .confirmation-number img {
+.pay .account img {
     grid-column: 1/3;
     width: 8em;
     margin: .5em 1em;
 }
 
-.pay .confirmation-number>div {
-    margin: 0 1em;
+.pay .promo-code>div {
+    margin: 1em 1em;
+}
+
+.promo-code button {
+    margin-top: 1em;
+    border: none;
+    padding: 1em 5em;
+    background-color: yellow;
+    cursor: pointer;
 }
 
 #total {
@@ -1518,6 +1529,12 @@ a {
 @media(max-width:450px) {
     .content-wrapper {
         /*735vh;*/
+    }
+
+    .unique-code,
+    .price {
+        font-size: 125%;
+        margin-bottom: 1em;
     }
 
     .header .menu-toggle i {
